@@ -48,7 +48,7 @@ for (i in 1:length(listOfHelicities)) {
 	Nc <- sapply(1:length(t1prime), function(i) t1prime[[i]][4])
 	vecNc <- as.numeric(Nc)
 
-	dat2 <- readLines("Rg-300K-run3.dat")
+	dat2 <- readLines(listOfRgs[i])
 	t2prime <- strsplit(dat2," ")
 	Rg <- sapply(1:length(t2prime), function(i) t2prime[[i]][2])
 	vecRg <- as.numeric(Rg)
